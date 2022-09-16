@@ -18,12 +18,25 @@ def sortNums (numList):
                 curr_val = next_val
     return numList
 
+       
+def sortChars (alphaList):
+    unicodeList = []
+    sortedChars = []
+   
+   # Convert into unicodes 
+    for char in alphaList:
+        unicodeList.append(ord(char))
 
-
-              
+   # Sort Unicodes
+    sortedUnicode = sortNums(unicodeList)
     
-    return list
+    # Convert unicodes back to chars
+    for num in sortedUnicode:
+        sortedChars.append(chr(num))
+    
+    return sortedChars
 
 
-print(sortNums([5,2,3,4,1]))
+
+
 
