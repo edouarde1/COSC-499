@@ -1,8 +1,3 @@
-
-    # 1. Keep track of current value i 
-    # 2. Keep track of start of secondary index. i+1 
-    # 3. Iterate through the secondary array and swap current with min if need be 
-
 def sortNums (numList):
     n = len(numList)
     for i in range(0,n): 
